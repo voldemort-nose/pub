@@ -6,6 +6,6 @@ user_custom_nodes: user_custom_nodes.json
 workflows: []
 normal_workflows:
   - id: e2n29syi8qn
-    name: basic.json
-    file: hello_woww/basic.json
-    version: 0
+    name: just_a_basic_workflow.json
+    file: hello_woww/just_a_basic_workflow.json
+    version: 1
