@@ -7,5 +7,5 @@ workflows: []
 normal_workflows:
   - id: e2n29syi8qn
     name: basic.json
-    file: test/basic.json
+    file: hello_woww/basic.json
     version: 0
