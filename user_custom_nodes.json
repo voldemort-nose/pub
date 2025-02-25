@@ -221,24 +221,5 @@
     "pip": [],
     "preemptions": [],
     "cached": "False"
-  },
-  {
-    "name": "UploadTextToS3",
-    "url": "ff",
-    "path": "custom_nodes",
-    "fetch_type": "git-clone",
-    "details": {
-      "author": "Unknown",
-      "title": "UploadTextToS3",
-      "files": [
-        "ff"
-      ],
-      "install_type": "git-clone"
-    },
-    "nodes": "UploadTextToS3",
-    "apt": [],
-    "pip": [],
-    "preemptions": [],
-    "cached": "False"
   }
 ]
