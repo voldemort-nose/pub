@@ -72,29 +72,5 @@
     "pip": [],
     "preemptions": [],
     "cached": "False"
-  },
-  {
-    "name": "ComfyUI-JakeUpgrade",
-    "url": "https://github.com/jakechai/ComfyUI-JakeUpgrade",
-    "path": "custom_nodes",
-    "fetch_type": "git-clone",
-    "details": {
-      "author": "jakechai",
-      "title": "ComfyUI-JakeUpgrade",
-      "id": "jkupgrade",
-      "reference": "https://github.com/jakechai/ComfyUI-JakeUpgrade",
-      "files": [
-        "https://github.com/jakechai/ComfyUI-JakeUpgrade"
-      ],
-      "install_type": "git-clone",
-      "description": "A ComfyUI workflow customization by Jake."
-    },
-    "nodes": [
-      "IPAdapterModelLoader"
-    ],
-    "apt": [],
-    "pip": [],
-    "preemptions": [],
-    "cached": "False"
   }
 ]
