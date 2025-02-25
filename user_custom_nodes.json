@@ -96,5 +96,130 @@
     "pip": [],
     "preemptions": [],
     "cached": "False"
+  },
+  {
+    "name": "ComfyUI Impact Pack",
+    "url": "https://github.com/ltdrdata/ComfyUI-Impact-Pack",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "Dr.Lt.Data",
+      "title": "ComfyUI Impact Pack",
+      "id": "comfyui-impact-pack",
+      "reference": "https://github.com/ltdrdata/ComfyUI-Impact-Pack",
+      "files": [
+        "https://github.com/ltdrdata/ComfyUI-Impact-Pack"
+      ],
+      "install_type": "git-clone",
+      "description": "This node pack offers various detector nodes and detailer nodes that allow you to configure a workflow that automatically enhances facial details. And provide iterative upscaler.\nNOTE: To use the UltralyticsDetectorProvider, you must install the 'ComfyUI Impact Subpack' separately."
+    },
+    "nodes": [
+      "FaceDetailer",
+      "SAMLoader"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [
+      "SAMLoader"
+    ],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI Impact Subpack",
+    "url": "https://github.com/ltdrdata/ComfyUI-Impact-Subpack",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "Dr.Lt.Data",
+      "title": "ComfyUI Impact Subpack",
+      "id": "comfyui-impact-subpack",
+      "reference": "https://github.com/ltdrdata/ComfyUI-Impact-Subpack",
+      "files": [
+        "https://github.com/ltdrdata/ComfyUI-Impact-Subpack"
+      ],
+      "install_type": "git-clone",
+      "description": "This node pack provides nodes that complement the Impact Pack, such as the UltralyticsDetectorProvider."
+    },
+    "nodes": [
+      "UltralyticsDetectorProvider"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "UltimateSDUpscale",
+    "url": "https://github.com/ssitu/ComfyUI_UltimateSDUpscale",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "ssitu",
+      "title": "UltimateSDUpscale",
+      "id": "usdu",
+      "reference": "https://github.com/ssitu/ComfyUI_UltimateSDUpscale",
+      "files": [
+        "https://github.com/ssitu/ComfyUI_UltimateSDUpscale"
+      ],
+      "install_type": "git-clone",
+      "description": "ComfyUI nodes for the Ultimate Stable Diffusion Upscale script by Coyote-A."
+    },
+    "nodes": [
+      "UltimateSDUpscale"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "segment anything",
+    "url": "https://github.com/storyicon/comfyui_segment_anything",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "storyicon",
+      "title": "segment anything",
+      "id": "sam",
+      "reference": "https://github.com/storyicon/comfyui_segment_anything",
+      "files": [
+        "https://github.com/storyicon/comfyui_segment_anything"
+      ],
+      "install_type": "git-clone",
+      "description": "Based on GroundingDino and SAM, use semantic strings to segment any element in an image. The comfyui version of sd-webui-segment-anything."
+    },
+    "nodes": [
+      "GroundingDinoModelLoader (segment anything)",
+      "SAMModelLoader (segment anything)",
+      "GroundingDinoSAMSegment (segment anything)"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI-JakeUpgrade",
+    "url": "https://github.com/jakechai/ComfyUI-JakeUpgrade",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "jakechai",
+      "title": "ComfyUI-JakeUpgrade",
+      "id": "jkupgrade",
+      "reference": "https://github.com/jakechai/ComfyUI-JakeUpgrade",
+      "files": [
+        "https://github.com/jakechai/ComfyUI-JakeUpgrade"
+      ],
+      "install_type": "git-clone",
+      "description": "A ComfyUI workflow customization by Jake."
+    },
+    "nodes": [
+      "IPAdapterModelLoader"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
   }
 ]
