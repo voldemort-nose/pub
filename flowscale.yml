@@ -10,6 +10,12 @@ workflows:
     file: hello_woww/generate_description_api.json
     skip_preprocess: true
     version: 0
+  - id: 668j8iihffq
+    name: workflowfluxloratraineroncomfyui_api_api.json
+    description: ''
+    file: hello_woww/workflowfluxloratraineroncomfyui_api_api.json
+    skip_preprocess: true
+    version: 0
 normal_workflows:
   - id: moz8jr0bwtr
     name: asic1.json
