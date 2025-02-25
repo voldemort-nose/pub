@@ -4,36 +4,36 @@ custom_nodes: custom_nodes.json
 user_models: user_models.json
 user_custom_nodes: user_custom_nodes.json
 workflows:
-  - id: 6usx8e5z66
+  - id: 90f8n9n91ul
     name: generate_description_api.json
     description: ''
     file: hello_woww/generate_description_api.json
     skip_preprocess: true
     version: 0
-  - id: wq7oeleu6b9
+  - id: kdhw46jzie
     name: workflowfluxloratraineroncomfyui_api_api.json
     description: ''
     file: hello_woww/workflowfluxloratraineroncomfyui_api_api.json
     skip_preprocess: true
     version: 0
 normal_workflows:
-  - id: 4upcysmd1mv
+  - id: o24cbvjrpf
     name: asic1.json
     file: hello_woww/asic1.json
     version: 1
-  - id: jfqagrj58fa
+  - id: ia3gpbftcj
     name: bas.json
     file: hello_woww/bas.json
-    version: 0
-  - id: 90rnpdbxgwa
+    version: 1
+  - id: ey6y54ou02f
     name: basic.json
     file: hello_woww/basic.json
     version: 3
-  - id: zpb77wfxjfn
+  - id: 1zk7kz676oz
     name: just_a_basic_workflow.json
     file: hello_woww/just_a_basic_workflow.json
     version: 1
-  - id: vdctw0t34r
+  - id: p5nbs1jpkpg
     name: workflow_bg_change_9_edited.json
     file: hello_woww/workflow_bg_change_9_edited.json
     version: 0
