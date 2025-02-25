@@ -72,30 +72,6 @@
     "cached": "False"
   },
   {
-    "name": "UltimateSDUpscale",
-    "url": "https://github.com/ssitu/ComfyUI_UltimateSDUpscale",
-    "path": "custom_nodes",
-    "fetch_type": "git-clone",
-    "details": {
-      "author": "ssitu",
-      "title": "UltimateSDUpscale",
-      "id": "usdu",
-      "reference": "https://github.com/ssitu/ComfyUI_UltimateSDUpscale",
-      "files": [
-        "https://github.com/ssitu/ComfyUI_UltimateSDUpscale"
-      ],
-      "install_type": "git-clone",
-      "description": "ComfyUI nodes for the Ultimate Stable Diffusion Upscale script by Coyote-A."
-    },
-    "nodes": [
-      "UltimateSDUpscale"
-    ],
-    "apt": [],
-    "pip": [],
-    "preemptions": [],
-    "cached": "False"
-  },
-  {
     "name": "segment anything",
     "url": "https://github.com/storyicon/comfyui_segment_anything",
     "path": "custom_nodes",
