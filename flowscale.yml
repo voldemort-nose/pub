@@ -23,3 +23,7 @@ normal_workflows:
     name: workflow_bg_change_9_edited.json
     file: hello_woww/workflow_bg_change_9_edited.json
     version: 0
+  - id: a3hibo8kyh5
+    name: asic1.json
+    file: hello_woww/asic1.json
+    version: 0
