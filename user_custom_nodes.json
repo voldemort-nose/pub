@@ -1,29 +1,5 @@
 [
   {
-    "name": "ComfyUI-Thumbnails",
-    "url": "https://github.com/audioscavenger/ComfyUI-Thumbnails",
-    "path": "custom_nodes",
-    "fetch_type": "git-clone",
-    "details": {
-      "author": "audioscavenger",
-      "title": "ComfyUI-Thumbnails",
-      "id": "thumbnails",
-      "reference": "https://github.com/audioscavenger/ComfyUI-Thumbnails",
-      "files": [
-        "https://github.com/audioscavenger/ComfyUI-Thumbnails"
-      ],
-      "install_type": "git-clone",
-      "description": "Load Image thumbnails, delete images, browse input subfolders."
-    },
-    "nodes": [
-      "LoadImage"
-    ],
-    "apt": [],
-    "pip": [],
-    "preemptions": [],
-    "cached": "False"
-  },
-  {
     "name": "VLM_nodes",
     "url": "https://github.com/gokayfem/ComfyUI_VLM_nodes",
     "path": "custom_nodes",
