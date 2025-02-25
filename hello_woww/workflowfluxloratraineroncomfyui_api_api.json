@@ -1,0 +1,378 @@
+{
+    "2": {
+        "inputs": {
+            "transformer": "flux1-dev-fp8.safetensors",
+            "vae": "ae.sft",
+            "clip_l": "clip_l.safetensors",
+            "t5": "t5xxl_fp8_e4m3fn.safetensors",
+            "lora_path": ""
+        },
+        "class_type": "FluxTrainModelSelect"
+    },
+    "4": {
+        "inputs": {
+            "steps": 250,
+            "network_trainer": [
+                "107",
+                0
+            ]
+        },
+        "class_type": "FluxTrainLoop"
+    },
+    "8": {
+        "inputs": {
+            "network_trainer": [
+                "14",
+                0
+            ],
+            "validation_settings": [
+                "37",
+                0
+            ]
+        },
+        "class_type": "FluxTrainValidate"
+    },
+    "9": {
+        "inputs": {
+            "images": [
+                "8",
+                1
+            ]
+        },
+        "class_type": "PreviewImage"
+    },
+    "14": {
+        "inputs": {
+            "save_state": false,
+            "copy_to_comfy_lora_folder": false,
+            "network_trainer": [
+                "4",
+                0
+            ]
+        },
+        "class_type": "FluxTrainSave"
+    },
+    "37": {
+        "inputs": {
+            "steps": 20,
+            "width": 1024,
+            "height": 1024,
+            "guidance_scale": 3,
+            "seed": 42,
+            "shift": true,
+            "base_shift": 0.5,
+            "max_shift": 1.15
+        },
+        "class_type": "FluxTrainValidationSettings"
+    },
+    "74": {
+        "inputs": {
+            "output": "",
+            "source": [
+                "133",
+                2
+            ]
+        },
+        "class_type": "Display Any (rgthree)"
+    },
+    "78": {
+        "inputs": {
+            "text_x": 10,
+            "text_y": 2,
+            "height": 48,
+            "font_size": 32,
+            "font_color": "white",
+            "label_color": "black",
+            "font": "FreeMono.ttf",
+            "text": [
+                "79",
+                0
+            ],
+            "direction": "up",
+            "image": [
+                "8",
+                1
+            ]
+        },
+        "class_type": "AddLabel"
+    },
+    "79": {
+        "inputs": {
+            "prefix": "steps ",
+            "suffix": "",
+            "input": [
+                "4",
+                1
+            ]
+        },
+        "class_type": "SomethingToString"
+    },
+    "88": {
+        "inputs": {
+            "output": "",
+            "source": [
+                "107",
+                1
+            ]
+        },
+        "class_type": "Display Any (rgthree)"
+    },
+    "95": {
+        "inputs": {
+            "optimizer_type": "adamw8bit",
+            "max_grad_norm": 1,
+            "lr_scheduler": "cosine_with_restarts",
+            "lr_warmup_steps": 0,
+            "lr_scheduler_num_cycles": 3,
+            "lr_scheduler_power": 1,
+            "min_snr_gamma": 5,
+            "extra_optimizer_args": ""
+        },
+        "class_type": "OptimizerConfig"
+    },
+    "97": {
+        "inputs": {
+            "plot_style": "seaborn-v0_8-dark-palette",
+            "window_size": 100,
+            "normalize_y": true,
+            "width": 768,
+            "height": 512,
+            "log_scale": false,
+            "network_trainer": [
+                "4",
+                0
+            ]
+        },
+        "class_type": "VisualizeLoss"
+    },
+    "98": {
+        "inputs": {
+            "filename_prefix": "flux_lora_loss_plot",
+            "images": [
+                "97",
+                0
+            ]
+        },
+        "class_type": "SaveImage"
+    },
+    "105": {
+        "inputs": {
+            "output": "",
+            "source": [
+                "107",
+                2
+            ]
+        },
+        "class_type": "Display Any (rgthree)"
+    },
+    "107": {
+        "inputs": {
+            "output_name": [
+                "148",
+                0
+            ],
+            "output_dir": "training/output/",
+            "network_dim": 16,
+            "network_alpha": 16,
+            "learning_rate": 0.0005,
+            "max_train_steps": 1000,
+            "apply_t5_attn_mask": true,
+            "cache_latents": "disk",
+            "cache_text_encoder_outputs": "disk",
+            "split_mode": true,
+            "weighting_scheme": "logit_normal",
+            "logit_mean": 0,
+            "logit_std": 1,
+            "mode_scale": 1.29,
+            "timestep_sampling": "shift",
+            "sigmoid_scale": 1,
+            "model_prediction_type": "raw",
+            "guidance_scale": 1,
+            "discrete_flow_shift": 3.1582000000000003,
+            "highvram": false,
+            "fp8_base": true,
+            "gradient_dtype": "bf16",
+            "save_dtype": "bf16",
+            "attention_mode": "sdpa",
+            "sample_prompts": [
+                "146",
+                0
+            ],
+            "additional_args": "",
+            "train_text_encoder": "disabled",
+            "clip_l_lr": 0,
+            "T5_lr": 0,
+            "gradient_checkpointing": "enabled",
+            "flux_models": [
+                "2",
+                0
+            ],
+            "dataset": [
+                "109",
+                0
+            ],
+            "optimizer_settings": [
+                "95",
+                0
+            ]
+        },
+        "class_type": "InitFluxLoRATraining"
+    },
+    "108": {
+        "inputs": {
+            "color_aug": false,
+            "flip_aug": false,
+            "shuffle_caption": false,
+            "caption_dropout_rate": 0,
+            "alpha_mask": false,
+            "reset_on_queue": false,
+            "caption_extension": ".txt"
+        },
+        "class_type": "TrainDatasetGeneralConfig"
+    },
+    "109": {
+        "inputs": {
+            "width": 512,
+            "height": 512,
+            "batch_size": 2,
+            "dataset_path": "training/input/",
+            "class_tokens": "LoraTrigger",
+            "enable_bucket": false,
+            "bucket_no_upscale": false,
+            "num_repeats": 10,
+            "min_bucket_reso": 256,
+            "max_bucket_reso": 1024,
+            "dataset_config": [
+                "108",
+                0
+            ]
+        },
+        "class_type": "TrainDatasetAdd"
+    },
+    "117": {
+        "inputs": {
+            "num_columns": [
+                "120",
+                3
+            ],
+            "match_image_size": false,
+            "max_resolution": 4096,
+            "images": [
+                "119",
+                0
+            ]
+        },
+        "class_type": "ImageConcatFromBatch"
+    },
+    "119": {
+        "inputs": {
+            "inputcount": 4,
+            "Update inputs": null,
+            "image_1": [
+                "78",
+                0
+            ]
+        },
+        "class_type": "ImageBatchMulti"
+    },
+    "120": {
+        "inputs": {
+            "image": [
+                "78",
+                0
+            ]
+        },
+        "class_type": "GetImageSizeAndCount"
+    },
+    "129": {
+        "inputs": {
+            "text_x": 10,
+            "text_y": 2,
+            "height": 48,
+            "font_size": 32,
+            "font_color": "white",
+            "label_color": "black",
+            "font": "FreeMono.ttf",
+            "text": [
+                "133",
+                0
+            ],
+            "direction": "up",
+            "image": [
+                "117",
+                0
+            ]
+        },
+        "class_type": "AddLabel"
+    },
+    "130": {
+        "inputs": {
+            "filename_prefix": "flux_lora_trainer_sheet",
+            "images": [
+                "129",
+                0
+            ]
+        },
+        "class_type": "SaveImage"
+    },
+    "133": {
+        "inputs": {
+            "save_state": false,
+            "network_trainer": [
+                "8",
+                0
+            ]
+        },
+        "class_type": "FluxTrainEnd"
+    },
+    "146": {
+        "inputs": {
+            "string": "portrait of a young woman|a young woman with long red hair walking in New York at night|a young woman with long red hair and bright blue eyes wearing a colorful bikini on a tropical beach|photo portrait of a young woman with long red hair, wearing a leather jacket and bluejeans in New York at sunset",
+            "strip_newlines": true
+        },
+        "class_type": "StringConstantMultiline"
+    },
+    "148": {
+        "inputs": {
+            "string": "lora_name.safetensors"
+        },
+        "class_type": "StringConstant"
+    },
+    "149": {
+        "inputs": {
+            "filepath": [
+                "133",
+                2
+            ],
+            "model_name": [
+                "148",
+                0
+            ]
+        },
+        "class_type": "UploadModelToS3"
+    },
+    "150": {
+        "inputs": {
+            "model_type": "lora",
+            "model_name": [
+                "149",
+                1
+            ],
+            "path_in_volume": "/loras",
+            "s3_url": [
+                "149",
+                0
+            ]
+        },
+        "class_type": "SaveModelToFlowscaleVolume"
+    },
+    "151": {
+        "inputs": {
+            "text": [
+                "150",
+                0
+            ]
+        },
+        "class_type": "ShowText|pysssss"
+    }
+}
