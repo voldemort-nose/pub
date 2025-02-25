@@ -1,1 +1,100 @@
-[]
+[
+  {
+    "name": "ComfyUI-Thumbnails",
+    "url": "https://github.com/audioscavenger/ComfyUI-Thumbnails",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "audioscavenger",
+      "title": "ComfyUI-Thumbnails",
+      "id": "thumbnails",
+      "reference": "https://github.com/audioscavenger/ComfyUI-Thumbnails",
+      "files": [
+        "https://github.com/audioscavenger/ComfyUI-Thumbnails"
+      ],
+      "install_type": "git-clone",
+      "description": "Load Image thumbnails, delete images, browse input subfolders."
+    },
+    "nodes": [
+      "LoadImage"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "VLM_nodes",
+    "url": "https://github.com/gokayfem/ComfyUI_VLM_nodes",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "gokayfem",
+      "title": "VLM_nodes",
+      "id": "vlm",
+      "reference": "https://github.com/gokayfem/ComfyUI_VLM_nodes",
+      "files": [
+        "https://github.com/gokayfem/ComfyUI_VLM_nodes"
+      ],
+      "install_type": "git-clone",
+      "description": "Custom Nodes for Vision Language Models (VLM) , Large Language Models (LLM), Image Captioning, Automatic Prompt Generation, Creative and Consistent Prompt Suggestion, Keyword Extraction"
+    },
+    "nodes": [
+      "MoonDream"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "WAS Node Suite",
+    "url": "https://github.com/WASasquatch/was-node-suite-comfyui",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "WASasquatch",
+      "title": "WAS Node Suite",
+      "id": "was",
+      "reference": "https://github.com/WASasquatch/was-node-suite-comfyui",
+      "files": [
+        "https://github.com/WASasquatch/was-node-suite-comfyui"
+      ],
+      "install_type": "git-clone",
+      "description": "A node suite for ComfyUI with many new nodes, such as image processing, text processing, and more."
+    },
+    "nodes": [
+      "Save Text File"
+    ],
+    "apt": [],
+    "pip": [
+      "numba"
+    ],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI_V-Express",
+    "url": "https://github.com/AIFSH/ComfyUI_V-Express",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "AIFSH",
+      "title": "ComfyUI_V-Express",
+      "id": "v-express-aifsh",
+      "reference": "https://github.com/AIFSH/ComfyUI_V-Express",
+      "files": [
+        "https://github.com/AIFSH/ComfyUI_V-Express"
+      ],
+      "install_type": "git-clone",
+      "description": "the comfyui custom node of [a/V-Express](https://github.com/tencent-ailab/V-Express) to make audio driven videos!"
+    },
+    "nodes": [
+      "LoadImagePath"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  }
+]
