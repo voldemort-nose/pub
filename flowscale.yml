@@ -27,3 +27,7 @@ normal_workflows:
     name: workflow_bg_change_9_edited.json
     file: hello_woww/workflow_bg_change_9_edited.json
     version: 0
+  - id: a5nop5dov0e
+    name: text_summarizer.json
+    file: hello_woww/text_summarizer.json
+    version: 0
