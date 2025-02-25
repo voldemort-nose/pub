@@ -9,3 +9,7 @@ normal_workflows:
     name: just_a_basic_workflow.json
     file: hello_woww/just_a_basic_workflow.json
     version: 1
+  - id: 2cz9bj55c6m
+    name: basic.json
+    file: hello_woww/basic.json
+    version: 0
