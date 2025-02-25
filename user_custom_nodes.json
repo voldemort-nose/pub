@@ -24,30 +24,6 @@
     "cached": "False"
   },
   {
-    "name": "ComfyUI_V-Express",
-    "url": "https://github.com/AIFSH/ComfyUI_V-Express",
-    "path": "custom_nodes",
-    "fetch_type": "git-clone",
-    "details": {
-      "author": "AIFSH",
-      "title": "ComfyUI_V-Express",
-      "id": "v-express-aifsh",
-      "reference": "https://github.com/AIFSH/ComfyUI_V-Express",
-      "files": [
-        "https://github.com/AIFSH/ComfyUI_V-Express"
-      ],
-      "install_type": "git-clone",
-      "description": "the comfyui custom node of [a/V-Express](https://github.com/tencent-ailab/V-Express) to make audio driven videos!"
-    },
-    "nodes": [
-      "LoadImagePath"
-    ],
-    "apt": [],
-    "pip": [],
-    "preemptions": [],
-    "cached": "False"
-  },
-  {
     "name": "ComfyUI Impact Subpack",
     "url": "https://github.com/ltdrdata/ComfyUI-Impact-Subpack",
     "path": "custom_nodes",
