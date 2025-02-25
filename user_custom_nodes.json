@@ -72,5 +72,59 @@
     "pip": [],
     "preemptions": [],
     "cached": "False"
+  },
+  {
+    "name": "ComfyUI Flux Trainer",
+    "url": "https://github.com/kijai/ComfyUI-FluxTrainer",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "kijai",
+      "title": "ComfyUI Flux Trainer",
+      "reference": "https://github.com/kijai/ComfyUI-FluxTrainer",
+      "files": [
+        "https://github.com/kijai/ComfyUI-FluxTrainer"
+      ],
+      "install_type": "git-clone",
+      "description": "Currently supports LoRA training, and untested full finetune with code from kohya's scripts: [a/https://github.com/kohya-ss/sd-scripts](https://github.com/kohya-ss/sd-scripts)"
+    },
+    "nodes": [
+      "FluxTrainModelSelect",
+      "FluxTrainLoop",
+      "FluxTrainValidate",
+      "FluxTrainSave",
+      "FluxTrainValidationSettings",
+      "OptimizerConfig",
+      "VisualizeLoss",
+      "InitFluxLoRATraining",
+      "TrainDatasetGeneralConfig",
+      "TrainDatasetAdd",
+      "FluxTrainEnd"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI-Thumbnails",
+    "url": "https://github.com/audioscavenger/ComfyUI-Thumbnails",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "Unknown",
+      "title": "ComfyUI-Thumbnails",
+      "reference": "",
+      "files": [
+        "https://github.com/audioscavenger/ComfyUI-Thumbnails"
+      ],
+      "install_type": "git-clone",
+      "description": ""
+    },
+    "nodes": "Display Any (rgthree)",
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
   }
 ]
