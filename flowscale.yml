@@ -3,7 +3,13 @@ models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
 user_custom_nodes: user_custom_nodes.json
-workflows: []
+workflows:
+  - id: l7y033eqyta
+    name: generate_description_api.json
+    description: ''
+    file: hello_woww/generate_description_api.json
+    skip_preprocess: true
+    version: 0
 normal_workflows:
   - id: e2n29syi8qn
     name: just_a_basic_workflow.json
