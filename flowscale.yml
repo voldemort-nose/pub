@@ -33,3 +33,7 @@ normal_workflows:
     name: workflow_bg_change_9_edited.json
     file: hello_woww/workflow_bg_change_9_edited.json
     version: 0
+  - id: 2r2buhtso9p
+    name: bas.json
+    file: hello_woww/bas.json
+    version: 0
