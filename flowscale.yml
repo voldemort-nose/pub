@@ -16,6 +16,26 @@ workflows:
     file: hello_woww/workflowfluxloratraineroncomfyui_api_api.json
     skip_preprocess: true
     version: 0
+  - id: hmmkx46v9n
+    name: asic1.json
+    description: ''
+    file: hello_woww/asic1.json
+  - id: pvdgvbmba2r
+    name: bas.json
+    description: ''
+    file: hello_woww/bas.json
+  - id: vmvajtkhjv
+    name: basic.json
+    description: ''
+    file: hello_woww/basic.json
+  - id: e4ycsk11kyl
+    name: just_a_basic_workflow.json
+    description: ''
+    file: hello_woww/just_a_basic_workflow.json
+  - id: 7v7mpw662xv
+    name: workflow_bg_change_9_edited.json
+    description: ''
+    file: hello_woww/workflow_bg_change_9_edited.json
 normal_workflows:
   - id: o24cbvjrpf
     name: asic1.json
